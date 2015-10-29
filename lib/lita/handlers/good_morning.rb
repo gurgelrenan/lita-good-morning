@@ -24,7 +24,7 @@ module Lita
 
         def initialize(*args)
           log.info 'Handler de bom dia inicializado!'
-          @room = Lita::Source.new(room: 'C03HUG8SG') # General
+          @room = Lita::Source.new(room: 'C04TRPZDW') # General
           super
         end
 
