@@ -36,9 +36,9 @@ module Lita
           every(50) do |_|
             Time.zone = 'Brasilia' # Needed since this will run in another thread..
 
-            # Todo dia de semana as 8 da manha...
-            send_good_morning_message #if Time.zone.now.strftime('%H:%M') == '08:00' &&
-                                      #   ![0, 6].include?(Time.zone.now.wday)
+            # Todo dia de semana as 10 da manha...
+            send_good_morning_message if Time.zone.now.strftime('%H:%M') == '10:00' &&
+                                         ![0, 6].include?(Time.zone.now.wday)
           end
         end
 
