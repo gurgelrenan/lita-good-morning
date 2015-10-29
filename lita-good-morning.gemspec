@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-good-morning"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Renan Gurgel"]
   spec.email         = ["gurgel.renan@gmail.com"]
   spec.description   = "Add a description"
@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "lita", ">= 4.6"
+  spec.add_runtime_dependency "activesupport", ">= 4.2.4"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry-byebug"
