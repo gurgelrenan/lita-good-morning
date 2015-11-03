@@ -20,7 +20,7 @@ module Lita
 
         on :connected, :check_if_its_hello_time
 
-        route(/channel id/, :channel_id, command: true, help: 'Retorna o ID do canal')
+        #route(/channel id/, :channel_id, command: true, help: 'Retorna o ID do canal')
 
         def initialize(*args)
           log.info 'Handler de bom dia inicializado!'
@@ -28,9 +28,9 @@ module Lita
           super
         end
 
-        def channel_id(response)
-          response.reply_with_mention response.message.source.room
-        end
+        # def channel_id(response)
+        #   response.reply_with_mention response.message.source.room
+        # end
 
         def check_if_its_hello_time(*_)
           every(50) do |_|

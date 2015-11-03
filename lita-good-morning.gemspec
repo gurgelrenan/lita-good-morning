@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-good-morning"
-  spec.version       = "0.1.4"
+  spec.version       = "0.1.5"
   spec.authors       = ["Renan Gurgel"]
   spec.email         = ["gurgel.renan@gmail.com"]
   spec.description   = "Add a description"
