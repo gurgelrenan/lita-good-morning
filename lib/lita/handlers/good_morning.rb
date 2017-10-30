@@ -16,7 +16,8 @@ module Lita
           'Bundinha! Quer dizer.. Bom dia!',
           'Dia rapeizee!',
           'Dia dia dia diiiiaaa!',
-          'Mais um dia começando, que esse seja ótimo galera!']
+          'Mais um dia começando, que esse seja ótimo galera!',
+          'Vai dar certo mah!']
 
         on :connected, :check_if_its_hello_time
 
