@@ -17,7 +17,8 @@ module Lita
           'Dia rapeizee!',
           'Dia dia dia diiiiaaa!',
           'Mais um dia começando, que esse seja ótimo galera!',
-          'Vai dar certo mah!']
+          'Vai dar certo mah!',
+          'Guddy dya']
 
         on :connected, :check_if_its_hello_time
 
