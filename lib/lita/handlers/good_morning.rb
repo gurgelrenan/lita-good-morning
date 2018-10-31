@@ -59,12 +59,13 @@ module Lita
 
       def at(time_string)
         return unless Time.zone.now.strftime('%H:%M') == time_string
+        yield
       end
 
       def ensure_one_message_a_day
-        return if message_sent?
+        return if good_morning_sent?
         yield
-        set_message_sent
+        set_good_morning_sent
       end
 
       def send_good_morning_message
@@ -75,12 +76,12 @@ module Lita
         !Date.today.strftime('%A').match?(/sunday|saturday/i)
       end
 
-      def set_message_sent
+      def set_good_morning_sent
         redis.set 'gave_good_morning', true
         redis.expire 'gave_good_morning', 60
       end
 
-      def message_sent?
+      def good_morning_sent?
         redis.get 'gave_good_morning'
       end
 
