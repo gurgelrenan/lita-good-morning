@@ -25,7 +25,8 @@ module Lita
         'Bom dia, rapaziada!',
         'Bom dia, paizinho!',
         'Good morning, Reinan!',
-        'Bom dia nego'
+        'Bom dia nego',
+        'Bom dia, meus bacanudos!'
       ].freeze
 
       on :connected, :check_if_its_hello_time
