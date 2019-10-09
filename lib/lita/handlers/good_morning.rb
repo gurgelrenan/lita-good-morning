@@ -22,7 +22,8 @@ module Lita
         'Dia dia dia diiiiaaa!',
         'Mais um dia começando, que esse seja ótimo galera!',
         'Vai dar certo, mah!',
-        'Bom dia, rapaziada!'
+        'Bom dia, rapaziada!',
+        'Bom dia, meus bacanudos!'
       ].freeze
 
       on :connected, :check_if_its_hello_time
